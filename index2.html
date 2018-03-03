@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+	<title>Сделать заказ</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+		textarea:invalid {
+			margin-bottom: 20px;
+		}
+		.input {
+			position: relative;
+			z-index: 1;
+			display: block;
+			margin: 0;
+			max-width: 100%;
+			width: 200px;
+		}
+		.inputtextarea {
+			max-width: 400px;
+			max-height: 200px;
+		}
+		div.col-md-6.w3_agileits_contact_grid_right {
+			margin-left: 38%;
+		}
+		@media screen and (max-width: 736px) {
+
+			div.col-md-6.w3_agileits_contact_grid_right {
+				margin-left: 20%;
+			}
+			.inputtextarea {
+				max-width: 200px;
+				max-height: 100px;
+			}
+			.submitorder {
+				margin-left:22%;
+			}
+
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Header -->
+	<header id="header">
+		<h1>
+			<strong>
+				<a href="index.html">FireSite</a>
+			</strong>
+		</h1>
+		<nav id="nav">
+			<ul>
+				<li>
+					<a class="headermenu" href="http://www.firesite.tk">Главная</a>
+				</li>
+				<li>
+					<a class="headermenu" href="http://order.firesite.tk">О нас</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+
+	<!-- Main -->
+	<section id="main" class="wrapper">
+		<div class="col-md-6 w3_agileits_contact_grid_right">
+			<h2 class="w3_agile_header">Сделать
+				<span> заказ</span>
+			</h2>
+			<form action="#" method="post">
+				<span class="input input--ichiro">
+					<span class="input__label-content input__label-content--ichiro">Your Name</span>
+					<input class="input__field input__field--ichiro" type="text" id="input-25" name="Name" placeholder=" " required="">
+					<label class="input__label input__label--ichiro" for="input-25">
+					</label>
+				</span>
+				<span class="input input--ichiro">
+					<span class="input__label-content input__label-content--ichiro">Your Email</span>
+					<input class="input__field input__field--ichiro" id="input__field input__field--ichiro" type="email" id="input-26" name="Email" placeholder=" " required="">
+					<label class="input__label input__label--ichiro" for="input-26">
+					</label>
+				</span>
+				<textarea class="inputtextarea" id="inputtextarea" name="Message" placeholder="Your order here..." required=""></textarea>
+				<input class="submitorder" onclick="sendMail();" type="submit" value="Submit"> </form>
+		</div>
+	</section>
+	<script type="text/javascript">
+		function sendMail() {
+			window.open('mailto:karoyanplay@gmail.com?subject=Заказ сайта от'
+				   +document.getElementById('input__field input__field--ichiro').value
+				   +'&body='+document.getElementById('inputtextarea').value);
+	  }
+	  </script>
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="container">
+			<ul class="icons">
+				<li>
+					<a href="#" class="icon fa-facebook"></a>
+				</li>
+				<li>
+					<a href="#" class="icon fa-twitter"></a>
+				</li>
+				<li>
+					<a href="#" class="icon fa-instagram"></a>
+				</li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; Untitled</li>
+				<li>Design:
+					<a href="http://templated.co">TEMPLATED</a>
+				</li>
+				<li>Images:
+					<a href="http://unsplash.com">Unsplash</a>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
